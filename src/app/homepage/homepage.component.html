@@ -1,0 +1,263 @@
+<div class="homePage" *ngIf="!openOffer">
+  <div class="header">My Offer</div>
+  <div class="credit-card-offer">ICICI Bank Rubyx Visa Credit Card</div>
+  <div class="cashback-point-detail mt-2">
+    <button class="cashback-block btn rounded">
+      <div class="cashback-header">
+        <img src="../../assets/otherLogo/cashbackLogo.png" alt="" />
+        <span>&nbsp; ₹{{ cashback }}</span>
+      </div>
+      <span>TOTAL CASHBACK EARNED</span>
+    </button>
+    <button class="point-block btn rounded">
+      <div class="point-header">
+        <img src="../../assets/otherLogo/pointLogo.png" alt="" />
+        <span>&nbsp; Pt. {{ point }}</span>
+      </div>
+      <span>TOTAL LOYALTY POINT</span>
+    </button>
+  </div>
+  <div class="offer-on-travel mt-2 ml-2">
+    <h3 style="color: #e8780f">Offers on Travel</h3>
+    <div class="travel-card" [ngClass]="{ isMobile: isMobile }">
+      <div class="card" [ngClass]="{ isMobile: isMobile }">
+        <img
+          class="card-img-top"
+          src="../../assets/Travel/firstImage/first3x.png"
+          alt="Card image cap"
+          style="height: 40% !important"
+        />
+        <div class="card-body">
+          <span class="card-title"
+            ><strong>Discount : upto Rs 10,000</strong></span
+          >
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <div class="card-button">
+            <button class="learn-more" (click)="openOfferDetails()">
+              Learn More
+            </button>
+            <button class="claim-offer" (click)="openOfferDetails()">
+              Claim Offer
+            </button>
+          </div>
+        </div>
+        <div class="logo" [ngClass]="{ isMobile: isMobile }">
+          <img src="../../assets/Travel/travel1Logo.png" alt="" />
+        </div>
+      </div>
+      <div class="card" [ngClass]="{ isMobile: isMobile }">
+        <img
+          class="card-img-top"
+          src="../../assets/Travel/secondImage/second3x.png"
+          alt="Card image cap"
+          style="height: 40% !important"
+        />
+        <div class="card-body">
+          <span class="card-title"
+            ><strong>Discount : upto Rs 10,000</strong></span
+          >
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <div class="card-button">
+            <button class="learn-more" (click)="openOfferDetails()">
+              Learn More
+            </button>
+            <button class="claim-offer" (click)="openOfferDetails()">
+              Claim Offer
+            </button>
+          </div>
+        </div>
+        <div class="logo" [ngClass]="{ isMobile: isMobile }">
+          <img src="../../assets/Travel/booking3x.png" alt="" />
+        </div>
+      </div>
+      <div class="card" *ngIf="!isMobile">
+        <img
+          class="card-img-top"
+          src="../../assets/Travel/secondImage/second3x.png"
+          alt="Card image cap"
+          style="height: 40% !important"
+        />
+        <div class="card-body">
+          <span class="card-title"
+            ><strong>Discount : upto Rs 10,000</strong></span
+          >
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <div class="card-button">
+            <button class="learn-more" (click)="openOfferDetails()">
+              Learn More
+            </button>
+            <button class="claim-offer" (click)="openOfferDetails()">
+              Claim Offer
+            </button>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="../../assets/Travel/booking3x.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offer-on-food mt-2">
+    <h3 style="color: #e8780f">Offers on Food</h3>
+    <div class="food-card" [ngClass]="{ isMobile: isMobile }">
+      <div class="card" [ngClass]="{ isMobile: isMobile }">
+        <img
+          class="card-img-top"
+          src="../../assets/Food/food1/food1_3x.png"
+          alt="Card image cap"
+          style="height: 40% !important"
+        />
+        <div class="card-body">
+          <span class="card-title"
+            ><strong>Discount : upto Rs 10,000</strong></span
+          >
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <div class="card-button">
+            <button class="learn-more" (click)="openOfferDetails()">
+              Learn More
+            </button>
+            <button class="claim-offer" (click)="openOfferDetails()">
+              Claim Offer
+            </button>
+          </div>
+        </div>
+        <div class="logo" [ngClass]="{ isMobile: isMobile }">
+          <img src="../../assets/Food/food1Logo.png" alt="" />
+        </div>
+      </div>
+      <div class="card" [ngClass]="{ isMobile: isMobile }">
+        <img
+          class="card-img-top"
+          src="../../assets/Food/food2/food2_3x.png"
+          alt="Card image cap"
+          style="height: 40% !important"
+        />
+        <div class="card-body">
+          <span class="card-title"
+            ><strong>Discount : upto Rs 10,000</strong></span
+          >
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <div class="card-button">
+            <button class="learn-more" (click)="openOfferDetails()">
+              Learn More
+            </button>
+            <button class="claim-offer" (click)="openOfferDetails()">
+              Claim Offer
+            </button>
+          </div>
+        </div>
+        <div class="logo" [ngClass]="{ isMobile: isMobile }">
+          <img src="../../assets/Food/food2Logo.png" alt="" />
+        </div>
+      </div>
+      <div class="card" *ngIf="!isMobile">
+        <img
+          class="card-img-top"
+          src="../../assets/Travel/secondImage/second3x.png"
+          alt="Card image cap"
+          style="height: 40% !important"
+        />
+        <div class="card-body">
+          <span class="card-title"
+            ><strong>Discount : upto Rs 10,000</strong></span
+          >
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <div class="card-button">
+            <button class="learn-more" (click)="openOfferDetails()">
+              Learn More
+            </button>
+            <button class="claim-offer" (click)="openOfferDetails()">
+              Claim Offer
+            </button>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="../../assets/Travel/booking3x.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="blur-background"
+  *ngIf="offerDetails"
+  [ngClass]="{ isMobile: isMobile }"
+>
+  <div class="offer-details" [ngClass]="{ isMobile: isMobile }">
+    <div class="card">
+      <span class="close-icon" (click)="close()">&times;</span>
+      <img
+        class="card-img-top"
+        src="../../assets/Travel/firstImage/first3x.png"
+        alt="Card image cap"
+        style="height: 40% !important"
+      />
+      <div class="card-body">
+        <span class="card-title"
+          ><strong><strong>Discount : upto Rs 10,000</strong></strong></span
+        >
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor Lorem ipsum dolor sit amet, consetetur sadipscing
+          elitr, sed diam nonumy eirmod tempor
+        </p>
+        <img
+          src="../../assets/otherLogo/term&condtionLogo.png"
+          alt=""
+          style="width: 20px"
+        />
+        <span class="card-title"> <strong>Terms and Condition</strong></span>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+          et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+          amet, consetetur sadipscingundefined
+        </p>
+        <div class="card-button mt-5">
+          <button class="btn btn-primary claim-offer" (click)="offerClaimed()">
+            Claim Offer
+          </button>
+          <button class="btn btn-primary close" (click)="close()">Close</button>
+        </div>
+      </div>
+      <div class="logo" [ngClass]="{ isMobile: isMobile }">
+        <img src="../../assets/Travel/travel1Logo.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  class="offer-claimed"
+  *ngIf="offerClaim"
+  [ngClass]="{ 'blur-background': offerClaim, isMobile: isMobile }"
+  style="opacity: 0.9"
+>
+  <div class="claimed-success" [ngClass]="{ isMobile: isMobile }">
+    <img src="../../assets/otherLogo/offerCaimled.png" alt="" />
+    <span>Offer Claimed Successfully</span>
+  </div>
+</div>

@@ -1,0 +1,239 @@
+@import url("https://unpkg.com/bootstrap/dist/css/bootstrap.min.css");
+
+.homePage {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8780f;
+    height: 2rem;
+    color: white;
+  }
+  .credit-card-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8780f;
+    background-color: #e3e0e0;
+  }
+  .cashback-point-detail {
+    display: flex;
+    justify-content: space-around;
+    .cashback-block {
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+      background-color: #102252;
+      color: white;
+      .cashback-header {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .point-block {
+      display: flex;
+      flex-direction: column;
+      background-color: #96201c;
+      color: white;
+      font-size: 10px;
+      .point-header {
+        display: flex;
+        justify-content: space-around;
+        font-size: 15px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  .offer-on-travel {
+    margin-left: 1.5rem;
+    .travel-card {
+      display: flex;
+      justify-content: space-around;
+      .card {
+        width: 30%;
+        border-radius: 30px;
+        height: 340px;
+        &.isMobile {
+          width: 45%;
+          font-size: 0.5rem;
+          height: 270px;
+        }
+        .card-body {
+          height: 60%;
+          margin-top: 2rem;
+        }
+        .card-button {
+          display: flex;
+          justify-content: space-around;
+          .learn-more {
+            border: 2px #e8780f solid;
+            background-color: white;
+            color: #e8780f;
+          }
+          .claim-offer {
+            border: 2px #e8780f solid;
+            background-color: #e8780f;
+            color: white;
+          }
+        }
+        .logo {
+          img {
+            position: absolute;
+            width: 20%;
+            height: 25%;
+            top: 25%;
+            left: 3%;
+            background: #e3e0e0;
+            border-radius: 50%;
+          }
+          &.isMobile {
+            img {
+              height: 15%;
+              top: 28%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .offer-on-food {
+    margin-left: 1.5rem;
+    .food-card {
+      display: flex;
+      justify-content: space-around;
+      .card {
+        width: 30%;
+        border-radius: 30px;
+        height: 340px;
+        &.isMobile {
+          width: 45%;
+          font-size: 0.5rem;
+          height: 270px;
+        }
+        .card-body {
+          height: 60%;
+          margin-top: 2rem;
+        }
+        .card-button {
+          display: flex;
+          justify-content: space-around;
+          .learn-more {
+            border: 2px #e8780f solid;
+            background-color: white;
+            color: #e8780f;
+          }
+          .claim-offer {
+            border: 2px #e8780f solid;
+            background-color: #e8780f;
+            color: white;
+          }
+        }
+        .logo {
+          img {
+            position: absolute;
+            width: 20%;
+            height: 25%;
+            top: 25%;
+            left: 3%;
+            background: #e3e0e0;
+            border-radius: 50%;
+          }
+          &.isMobile {
+            img {
+              height: 15%;
+              top: 28%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.blur-background {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #e3e0e0;
+  top: 0;
+  &.isMobile {
+    background-color: white;
+  }
+  .offer-details {
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 20%;
+    height: 80%;
+    &.isMobile {
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+    .card {
+      height: 100%;
+      border-radius: 30px;
+      font-size: 1rem;
+    }
+    .close-icon {
+      position: absolute;
+      right: 10px;
+      font-size: xx-large;
+      cursor: pointer;
+    }
+    .card-body {
+      margin-top: 3rem;
+      .card-text {
+        font-size: 0.5rem;
+      }
+    }
+    .card-button {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  .logo {
+    img {
+      position: absolute;
+      width: 20%;
+      height: 25%;
+      top: 25%;
+      left: 3%;
+      background: #e3e0e0;
+      border-radius: 50%;
+    }
+    &.isMobile {
+      img {
+        width: 25%;
+        height: 15%;
+        top: 32%;
+      }
+    }
+  }
+}
+.offer-claimed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .claimed-success {
+    width: 35%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    &.isMobile {
+      width: 70%;
+    }
+  }
+}
